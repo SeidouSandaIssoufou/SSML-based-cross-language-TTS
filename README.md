@@ -276,3 +276,53 @@ Its main value is not merely text translation. Its value is enabling a complete 
 - and the answer returns as intelligible, natural speech in the user's language.
 
 This approach can help reduce both the **language divide** and the **literacy divide** in access to artificial intelligence.
+
+---
+
+## Collaborative Dataset Contributions
+
+We want to make this a collaborative project where researchers, developers, language specialists, institutions, and community members can contribute datasets.
+
+To support interoperability between systems, contributed datasets should follow the JSON exchange format below.
+
+## Data Exchange JSON Format
+
+```json
+{
+  "dataset_qualified_name": "",
+  "dataset_name": "",
+  "dataset_version": "",
+  "dataset_schema_version": "",
+  "dataset_created_by": "",
+  "dataset_creation_date": "",
+  "dataset_creation_notes": "",
+  "records": [
+    {
+      "record_id": "",
+      "created_date": "",
+      "modified_date": "",
+      "source_language_code": "",
+      "source_text": "",
+      "source_english_text": "",
+      "target_language_code": "",
+      "target_text": "",
+      "syllables": [],
+      "phonemes": [],
+      "phoneme_alphabet": "",
+      "prosody_markup": "",
+      "translation_rules": [],
+      "prosody_rules": [],
+      "source_dataset_qualified_name": "",
+      "source_dataset_name": "",
+      "source_dataset_version": "",
+      "source_dataset_record_id": "",
+      "transformation_from_source": "",
+      "ssml": "",
+      "tts_engine": "",
+      "tts_engine_version": "",
+      "voice_name": "",
+      "score": null,
+      "human_validation_status": ""
+    }
+  ]
+}
